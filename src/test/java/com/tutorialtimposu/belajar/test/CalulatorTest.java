@@ -19,4 +19,11 @@ public class CalulatorTest {
         // cara yang direkomendasikan
         assertEquals(20, result);
     }
+
+    @Test
+    public void testDivideSuccess() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.devide(100, 0);
+        });
+    }
 }
