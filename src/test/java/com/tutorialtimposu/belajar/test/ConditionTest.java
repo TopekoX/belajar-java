@@ -66,4 +66,20 @@ public class ConditionTest {
 
     }
 
+    @Test
+    @EnabledIfEnvironmentVariables({
+            @EnabledIfEnvironmentVariable(named = "PROFILE", matches = "DEV")
+    })
+    void testEnabledOnProfileDev() {
+
+    }
+
+    @Test
+    @DisabledIfEnvironmentVariables({
+            @DisabledIfEnvironmentVariable(named = "PROFILE", matches = "DEV")
+    })
+    void testDisabledOnProfileDev() {
+
+    }
+
 }
