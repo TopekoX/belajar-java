@@ -1,9 +1,7 @@
 package com.tutorialtimposu.belajar.test;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.DisabledOnOs;
-import org.junit.jupiter.api.condition.EnabledOnOs;
-import org.junit.jupiter.api.condition.OS;
+import org.junit.jupiter.api.condition.*;
 
 public class ConditionTest {
 
@@ -16,6 +14,30 @@ public class ConditionTest {
     @Test
     @DisabledOnOs(OS.WINDOWS)
     public void testDisableOnWindows() {
+
+    }
+
+    @Test
+    @EnabledOnJre(JRE.JAVA_8)
+    void testEnableOnJava8() {
+
+    }
+
+    @Test
+    @DisabledOnJre(JRE.JAVA_8)
+    void testDisableOnJava8() {
+
+    }
+
+    @Test
+    @EnabledForJreRange(min = JRE.JAVA_11, max = JRE.JAVA_17)
+    void testEnabledOnJava14To17() {
+
+    }
+
+    @Test
+    @DisabledForJreRange(min = JRE.JAVA_11, max = JRE.JAVA_17)
+    void testDisabledOnJava14To17() {
 
     }
 
