@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import org.opentest4j.TestAbortedException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 //@DisplayName("Test untuk Calculator")
 @DisplayNameGeneration(SimpleDisplayNameGenerator.class)
@@ -77,5 +78,11 @@ public class CalulatorTest {
         }
     }
 
+    // menggunakan assumeTrue untuk membatalkan test
+    // walaupun dia error karena exception tapi akan dianggap dibatalkan
+    @Test
+    public void testAssumption() {
+       assumeTrue("DEV".equals(System.getenv("PROFILE")));
+    }
 
 }
