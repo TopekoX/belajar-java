@@ -2,12 +2,15 @@ package com.tutorialtimposu.belajar.test;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 
+@DisplayName("Test untuk Calculator")
 public class CalulatorTest {
 
     private Calculator calculator = new Calculator();
 
     @Test
+    @DisplayName("Test Skenario sukses untuk methid add(integer, integer)")
     public void testAddSuccess() {
         Integer result = calculator.add(10, 10);
 
@@ -21,6 +24,7 @@ public class CalulatorTest {
     }
 
     @Test
+    @DisplayName("Test Skenario throw exception yang diinginkan (tidak error)")
     public void testDivideSuccess() {
         assertThrows(IllegalArgumentException.class, () -> {
             calculator.devide(100, 0);
