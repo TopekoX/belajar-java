@@ -2,6 +2,7 @@ package com.tutorialtimposu.belajar.test;
 
 import com.tutorialtimposu.belajar.test.generator.SimpleDisplayNameGenerator;
 import org.junit.jupiter.api.*;
+import org.opentest4j.TestAbortedException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -63,4 +64,18 @@ public class CalulatorTest {
     public void commingSoon() {
 
     }
+
+    // exception TestAbortedException akan membatalkan test
+    // dalam situasi tertentu kita bisa menghadle apabila dalam kondisi tertentu
+    // walaupun dia error karena exception tapi akan dianggap dibatalkan
+    @Test
+    public void testAborted() {
+        var profile = System.getenv("PROFILE");
+
+        if (!"DEV".equals(profile)) {
+            throw new TestAbortedException("Test dibatalkan karena profile bukan DEV");
+        }
+    }
+
+
 }
