@@ -1,6 +1,7 @@
 package com.tutorialtimposu.belajar.test;
 
 import com.tutorialtimposu.belajar.test.generator.SimpleDisplayNameGenerator;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,5 +33,11 @@ public class CalulatorTest {
         assertThrows(IllegalArgumentException.class, () -> {
             calculator.devide(100, 0);
         });
+    }
+
+    @Test
+    @Disabled
+    public void commingSoon() {
+
     }
 }
