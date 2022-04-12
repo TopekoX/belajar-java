@@ -1,4 +1,4 @@
-package com.tutorialtimposu.belajar.test.generator;
+package com.tutorialtimposu.belajar.test;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
