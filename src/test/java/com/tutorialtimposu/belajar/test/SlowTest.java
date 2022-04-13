@@ -15,11 +15,13 @@ public class SlowTest {
     void testSlow1() throws InterruptedException {
         Thread.sleep(4_000);
     }
+
     @Test
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     void testSlow2() throws InterruptedException {
         Thread.sleep(4_000);
     }
+
     @Test
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     void testSlow3() throws InterruptedException {
