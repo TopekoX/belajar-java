@@ -43,4 +43,16 @@ public class ServiceTest {
         Assertions.assertNotNull(person);
         Assertions.assertEquals("topekox", person.getName());
     }
+
+    @Test
+    void registerSuccess() {
+        var person = personService.register("Ucup");
+        Assertions.assertNotNull(person);
+        Assertions.assertEquals("Ucup", person.getName());
+        Assertions.assertNotNull(person.getId());
+
+        Mockito.verify(personRepository, Mockito.times(1))
+                .insertPerson(new Person(person.getId(), "Ucup")); // verifikasi harus selalu di panggil apalagi itu method void insert() pada Person service
+    }
+
 }
