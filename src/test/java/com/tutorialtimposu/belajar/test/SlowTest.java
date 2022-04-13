@@ -1,4 +1,4 @@
-package com.tutorialtimposu.belajar.test.resolver;
+package com.tutorialtimposu.belajar.test;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
