@@ -11,5 +11,7 @@ public class GenericClassApp {
         String stringValue = stringMyData.getData();
         Integer integerValue = integerMyData.getData();
 
+        System.out.println(stringValue);
+        System.out.println(integerValue);
     }
 }
