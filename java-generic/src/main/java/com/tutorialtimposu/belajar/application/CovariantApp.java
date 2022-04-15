@@ -18,6 +18,6 @@ public class CovariantApp {
     public static void process(MyData<? extends Object> myData) {
         System.out.println(myData.getData());
 
-        //myData.getData("Halo"); // tidak bisa panggil get
+        //myData.setData("Halo"); // tidak bisa panggil get
     }
 }
