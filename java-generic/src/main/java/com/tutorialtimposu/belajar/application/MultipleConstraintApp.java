@@ -43,7 +43,7 @@ public class MultipleConstraintApp {
 
         public void setData(T data) {
             this.data = data;
-            this.data.sayHello();
+            this.data.sayHello("ucup");
         }
     }
 
