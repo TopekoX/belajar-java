@@ -10,6 +10,14 @@ import java.util.Queue;
  * (siapa yang pertama masuk dia yang pertama keluar) FIFO (First In First Out)
  * Queue mempunyai 3 class konkrit yaitu ArrayDeque, PriorityQueue, LinkedList
  */
+
+/**
+ * ArrayDeque vs LinkedList vs PriorityQueue
+ * ArrayDeque = menggunakan array sebagai implementasi queue nya
+ * LinkedList = menggunakan double linked list sebagai implementasi queue nya
+ * PriorityQueue = menggunakan array sebagai implementasi queue nya, namun diurutkan mennggunakan Comparable atau Comparator
+ */
+
 public class DemoQueue {
 
     public static void main(String[] args) {
