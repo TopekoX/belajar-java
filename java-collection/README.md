@@ -44,3 +44,10 @@ Java collection telah menyediakan semuanya yang berhubungan dengan collection, s
 * LinkedHashMap
 * EnumMap
 * ImmutableMap
+* SortedMap
+* NavigableMap
+* Entry
+* Legacy Collection Vector
+* Legacy Collection HashTable
+* Legacy Collection Stack
+* Sorting
