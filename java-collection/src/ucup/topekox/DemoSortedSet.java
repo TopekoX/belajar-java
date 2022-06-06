@@ -10,7 +10,12 @@ import java.util.TreeSet;
 
 /**
  * SortedSet digunakan untuk mengurutkan data
+ *
+ * SortedSet adalah turunan dari Set, namun di SortedSet elemen-elemen yang dimasukkan kedalam SortedSet akan otomatis diurutkan
+ * Jika element adalah turunan dari interface Comparable, maka secara otomatis akan diurutkan menggunakan comparable tersebut
+ * Jika element bukan turunan dari interface Comparable, maka kita bisa menggunakan Comparator untuk memberi tahun si SortedSet bagaimana cara mengurutkan elemen-elemen nya
  */
+
 public class DemoSortedSet {
     public static void main(String[] args) {
 
