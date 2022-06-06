@@ -1,4 +1,6 @@
-### List of Content
+## List of Content
+
+### Collection
 
 * Iterable dan Iterator
 * Collection Interface
@@ -10,3 +12,11 @@
 * NavigableSet Interface 
 * Queue Interface
 * Deque Interface
+
+### Map
+
+* HashMap
+* WeakHashMap
+* IdentityHashMap
+* LinkedHashMap
+* EnumMap
